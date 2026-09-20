@@ -17,6 +17,6 @@ const img=e.img?'<div class="thumb"><img loading="lazy" src="'+esc(e.img)+'" alt
 return '<div class="card"><div class="txt"><div class="meta">'+dt+'｜'+esc(e.location||"")+'<span class="tag '+(e.free?"free":"paid")+'">'+(e.free?"免費":"付費")+'</span><span class="tag loc">'+locCat(e.location)+'</span></div><div class="t">'+esc(e.title)+'</div><div class="d">'+esc(e.description||"")+'</div><a class="btn" href="https://calendar.google.com/calendar/render?'+q2.toString()+'">加入行事曆</a>'+(e.url?'<a class="src" href="'+esc(e.url)+'">來源</a>':"")+'</div>'+img+'</div>';}).join("")||"<p>沒有符合的場次。</p>";}
 function toUtc(iso){const d=new Date(iso);const p=n=>String(n).padStart(2,"0");return d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+"T"+p(d.getUTCHours())+p(d.getUTCMinutes())+"00Z";}
 ["q","loc","fee","sort"].forEach(id=>document.getElementById(id).addEventListener("input",render));
-function loadEv(n){fetch("events.json").then(r=>{if(!r.ok)throw 0;return r.json();}).then(j=>{EV=j;render();}).catch(()=>{if(n<4){document.getElementById("list").innerHTML="<p>總庫更新中，5 秒後重試…</p>";setTimeout(()=>loadEv(n+1),5000);}else{document.getElementById("list").innerHTML="<p>總庫載入失敗，請稍後再試。</p>";}});}
+function loadEv(n){fetch("events.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(j=>{EV=j;render();}).catch(()=>{if(n<4){document.getElementById("list").innerHTML="<p>總庫更新中，5 秒後重試…</p>";setTimeout(()=>loadEv(n+1),5000);}else{document.getElementById("list").innerHTML="<p>總庫載入失敗，請稍後再試。</p>";}});}
 loadEv(0);
 </script></div></body></html>
