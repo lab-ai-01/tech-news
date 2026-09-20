@@ -1,0 +1,134 @@
+[
+ {
+  "title": "2026 EE前瞻技術大會",
+  "start": "2026-10-07T09:30:00+08:00",
+  "end": "2026-10-08T17:30:00+08:00",
+  "location": "台北文創6樓，台北市信義區菸廠路88號",
+  "description": "Intelligent Edge x Physical AI，技術論壇＋展覽",
+  "url": "https://www.accupass.com/event/2609090756142114586819",
+  "id": "4d270eb54156",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "空間運算新時代：知識視覺化與AI代理人（台大）",
+  "start": "2026-10-14T10:00:00+08:00",
+  "end": "2026-10-14T12:00:00+08:00",
+  "location": "台大綜合教學館大講堂，台北市羅斯福路四段1號",
+  "description": "李佳勳博士，校內報名制上限300人",
+  "url": "https://www.dlc.ntu.edu.tw/",
+  "id": "3e7e9a3e0829",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "中研院開放日：多模態語言模型",
+  "start": "2026-10-17T09:30:00+08:00",
+  "end": "2026-10-17T10:00:00+08:00",
+  "location": "中研院資訊所新館106演講廳，南港研究院路二段128號",
+  "description": "廖弘源博士，官網報名",
+  "url": "https://openhouse.sinica.edu.tw/events/463",
+  "id": "22069c561375",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "中研院開放日：AI真假辨識",
+  "start": "2026-10-17T10:10:00+08:00",
+  "end": "2026-10-17T10:40:00+08:00",
+  "location": "中研院資訊所新館106演講廳，南港研究院路二段128號",
+  "description": "劉庭祿博士，官網報名",
+  "url": "https://openhouse.sinica.edu.tw/events/500",
+  "id": "870fe39b3d9e",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "IMPACT-IAAC 2026（先進封裝）",
+  "start": "2026-10-19T09:00:00+08:00",
+  "end": "2026-10-22T18:00:00+08:00",
+  "location": "10/19漢來大飯店；10/20-22南港展覽館2館",
+  "description": "付費制，早鳥General NT$14000/學生NT$3500",
+  "url": "https://www.impact.org.tw/",
+  "id": "a909b9e08d01",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "2026科技論壇：AI Agent新賽局",
+  "start": "2026-10-14T09:00:00+08:00",
+  "end": "2026-10-14T16:30:00+08:00",
+  "location": "台北國際會議中心201室",
+  "description": "免費審核制，10/13前通知",
+  "url": "https://money.udn.com/ACT/2026/tech/index.html",
+  "id": "bd2b8439d611",
+  "free": true,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "IEEE線上講座：Phototransistor Memory",
+  "start": "2026-10-14T09:30:00+08:00",
+  "end": "2026-10-14T11:00:00+08:00",
+  "location": "線上 Virtual",
+  "description": "Larry Cheng教授，免費",
+  "url": "https://events.vtools.ieee.org/m/566556",
+  "id": "2863cedd17e3",
+  "free": true,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "成大量子資訊演講",
+  "start": "2026-10-05T12:10:00+08:00",
+  "end": "2026-10-05T13:10:00+08:00",
+  "location": "成大理學院物理系館R36173",
+  "description": "江介宏教授，免費，講題TBA",
+  "url": "http://140.116.249.184/events/318",
+  "id": "354ec1d59f33",
+  "free": true,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "Microsoft DevDays Asia 2026",
+  "start": "2026-09-21T09:00:00+08:00",
+  "end": "2026-09-23T18:00:00+08:00",
+  "location": "台北華南國際會議中心",
+  "description": "免費，社群之夜審核制",
+  "url": "https://learn.microsoft.com/",
+  "id": "785b19c6d0a3",
+  "free": true,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "ACM RecSys 2026（美國）",
+  "start": "2026-09-28T09:00:00-05:00",
+  "end": "2026-10-02T18:00:00-05:00",
+  "location": "Minneapolis, USA（實體）",
+  "description": "付費制，會員950美元起",
+  "url": "https://recsys.acm.org/recsys26/",
+  "id": "0446cdba52a0",
+  "free": false,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "2026資安社群嘉年華",
+  "start": "2026-10-03T09:00:00+08:00",
+  "end": "2026-10-03T17:00:00+08:00",
+  "location": "ACW SOUTH沙崙基地，台南歸仁十三路一段6號",
+  "description": "免費，200名",
+  "url": "https://ievents.iii.org.tw/EventS.aspx?t=0&id=3514",
+  "id": "7fd1c048af10",
+  "free": true,
+  "added": "2026-09-20"
+ },
+ {
+  "title": "弱點掃描與漏洞修補",
+  "start": "2026-10-05T09:00:00+08:00",
+  "end": "2026-10-05T17:30:00+08:00",
+  "location": "沙崙資安基地C115，台南歸仁13路一段6號",
+  "description": "免費，限40名",
+  "url": "https://ievents.iii.org.tw/EventS.aspx?t=0&id=3458",
+  "id": "cc99b9e6da13",
+  "free": true,
+  "added": "2026-09-20"
+ }
+]
