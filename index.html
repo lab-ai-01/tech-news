@@ -7,22 +7,24 @@
 <script>
 let EV=[];
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function siteId(){try{return (location.pathname||"/").split("/").filter(Boolean)[0]||"main";}catch(e){return "main";}}
+/*SITEKEY_V1*/
 function ph(e){const t=(e.title||"").slice(0,18),d=(e.start||"").slice(0,10);const s='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="90"><rect width="120" height="90" fill="#1a3a6b"/><text x="8" y="36" font-size="11" font-weight="bold" fill="#ffffff" font-family="sans-serif">'+t.replace(/&/g,"&amp;").replace(/</g,"&lt;")+'</text><text x="8" y="58" font-size="10" fill="#9ec1ff" font-family="sans-serif">'+d+'</text><text x="8" y="76" font-size="9" fill="#6b8fc7" font-family="sans-serif">AI-Lab</text></svg>';return "data:image/svg+xml;utf8,"+encodeURIComponent(s);}
 function locCat(l){l=l||"";if(/線上|Virtual|virtual/i.test(l))return"線上";if(/台南|成大|南大|沙崙/i.test(l))return"台南";if(/台北|新北|桃園|新竹|台中|高雄|USA|美國|Minneapolis/i.test(l))return(/USA|美國|Minneapolis/i.test(l)?"海外":"台北");return"其他";}
 function toUtc(iso){const d=new Date(iso);const p=n=>String(n).padStart(2,"0");return d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+"T"+p(d.getUTCHours())+p(d.getUTCMinutes())+"00Z";}
 function todayStr(){const d=new Date();const p=n=>String(n).padStart(2,"0");return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
 function isExpired(e){return (e.end||e.start||'').slice(0,10)<todayStr();}
-function getAdded(){try{return JSON.parse(localStorage.getItem('ailab_added')||'[]');}catch(e){return [];}}
-function markAdded(id){try{const a=getAdded();if(a.indexOf(id)<0){a.push(id);localStorage.setItem('ailab_added',JSON.stringify(a));}render();}catch(e){}}
-function getLiked(){try{return JSON.parse(localStorage.getItem('ailab_liked')||'[]');}catch(e){return [];}}
-function toggleLike(id){try{let a=getLiked();const i=a.indexOf(id);if(i<0){a.push(id);}else{a.splice(i,1);}localStorage.setItem('ailab_liked',JSON.stringify(a));render();}catch(e){}}
+function getAdded(){try{return JSON.parse(localStorage.getItem('ailab_added_'+siteId())||'[]');}catch(e){return [];}}
+function markAdded(id){try{const a=getAdded();if(a.indexOf(id)<0){a.push(id);localStorage.setItem('ailab_added_'+siteId(),JSON.stringify(a));}render();}catch(e){}}
+function getLiked(){try{return JSON.parse(localStorage.getItem('ailab_liked_'+siteId())||'[]');}catch(e){return [];}}
+function toggleLike(id){try{let a=getLiked();const i=a.indexOf(id);if(i<0){a.push(id);}else{a.splice(i,1);}localStorage.setItem('ailab_liked_'+siteId(),JSON.stringify(a));render();}catch(e){}}
 function cardHtml(e){
 var dt=e.start.slice(0,16).split('T').join(' ');
 if(e.start.slice(0,10)!==e.end.slice(0,10)){dt+=' → '+e.end.slice(5,16).split('T').join(' ');}
 var q2=new URLSearchParams({action:'TEMPLATE',text:e.title,dates:toUtc(e.start)+'/'+toUtc(e.end),details:(e.description||'')+(e.url?'\n'+e.url:''),location:e.location||''});
 var imgSrc=e.img||ph(e);
 var imgHtml='<img loading="lazy" src="'+esc(imgSrc)+'" alt="">';
-var img='<div class="thumb">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+imgHtml+'</a>':imgHtml)+'</div>';
+var lk0=getLiked().indexOf(e.id)>=0;var likeBtn='<button class="like'+(lk0?' on':'')+'" onclick="toggleLike(\''+e.id+'\')" title="有興趣">'+(lk0?'\u2764\ufe0f':'\u2661')+'</button>';var img='<div class="thumb">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+imgHtml+'</a>':imgHtml)+'<div style="text-align:right;">'+likeBtn+'</div></div>';
 var exp=isExpired(e);var done=getAdded().indexOf(e.id)>=0;
 var h='<div class="card'+(exp?' expired':'')+(done&&!exp?' done':'')+'"><div class="txt"><div class="meta">'+dt+'｜'+esc(e.location||'');
 h+='<span class="tag '+(e.free?'free':'paid')+'">'+(e.free?'免費':'付費')+'</span><span class="tag loc">'+locCat(e.location)+'</span>';
@@ -31,7 +33,7 @@ if(exp){h+='<span class="tag loc">已結束</span>';}
 h+='</div><div class="t">'+(e.url?'<a style="color:inherit;text-decoration:none;" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+'</a>':esc(e.title))+'</div>';
 h+='<div class="d">'+esc(e.description||'')+'</div>';
 if(!exp){h+='<a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?'+q2.toString()+'" onclick="markAdded(\''+e.id+'\')">加入行事曆</a>';}
-if(e.url){h+='<a class="src" href="'+esc(e.url)+'">來源</a>';}var lk=getLiked().indexOf(e.id)>=0;h+='<button class="like'+(lk?' on':'')+'" onclick="toggleLike(\''+e.id+'\')" title="有興趣">'+(lk?'\u2764\ufe0f':'\u2661')+'</button>';/*CARD_LIKE_V1*/
+if(e.url){h+='<a class="src" href="'+esc(e.url)+'">來源</a>';}var lk=lk0;/*CARD_LIKE_V1*/
 h+='</div>'+img+'</div>';return h;}
 function render(){
 const q=document.getElementById("q").value.trim(),loc=document.getElementById("loc").value,fee=document.getElementById("fee").value,sort=document.getElementById("sort").value,Olk=document.getElementById("liked").value;
