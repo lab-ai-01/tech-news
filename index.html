@@ -6,6 +6,7 @@
 <div id="count"></div><div id="list"></div>
 <script>
 let EV=[];
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function locCat(l){l=l||"";if(/線上|Virtual|virtual/i.test(l))return"線上";if(/台南|成大|南大|沙崙/i.test(l))return"台南";if(/台北|新北|桃園|新竹|台中|高雄|USA|美國|Minneapolis/i.test(l))return(/USA|美國|Minneapolis/i.test(l)?"海外":"台北");return"其他";}
 function render(){const q=document.getElementById("q").value.trim(),loc=document.getElementById("loc").value,fee=document.getElementById("fee").value,sort=document.getElementById("sort").value;
 let r=EV.filter(e=>{if(q&&((e.title+e.description+e.location).indexOf(q)<0))return false;if(loc&&locCat(e.location)!==loc)return false;if(fee==="free"&&!e.free)return false;if(fee==="paid"&&e.free)return false;return true;});
