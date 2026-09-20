@@ -18,10 +18,11 @@ function getAdded(){try{return JSON.parse(localStorage.getItem('ailab_added_'+si
 function markAdded(id){try{const a=getAdded();if(a.indexOf(id)<0){a.push(id);localStorage.setItem('ailab_added_'+siteId(),JSON.stringify(a));}render();}catch(e){}}
 function getLiked(){try{return JSON.parse(localStorage.getItem('ailab_liked_'+siteId())||'[]');}catch(e){return [];}}
 function toggleLike(id){try{let a=getLiked();const i=a.indexOf(id);if(i<0){a.push(id);}else{a.splice(i,1);}localStorage.setItem('ailab_liked_'+siteId(),JSON.stringify(a));render();}catch(e){}}
+function fmtTitle(e){try{const d=new Date(e.start);const wd='\u65e5\u4e00\u4e8c\u4e09\u56db\u4e94\u516d'[d.getDay()];const p=n=>String(n).padStart(2,'0');const loc=String(e.location||'').split(/[\uff0c,\u3001(\uff08]/)[0].slice(0,15);return (d.getMonth()+1)+'/'+d.getDate()+'('+wd+') '+d.getHours()+':'+p(d.getMinutes())+' '+e.title+'@'+loc;}catch(_){return e.title;}}
 function cardHtml(e){
 var dt=e.start.slice(0,16).split('T').join(' ');
 if(e.start.slice(0,10)!==e.end.slice(0,10)){dt+=' → '+e.end.slice(5,16).split('T').join(' ');}
-var q2=new URLSearchParams({action:'TEMPLATE',text:e.title,dates:toUtc(e.start)+'/'+toUtc(e.end),details:(e.description||'')+(e.url?'\n'+e.url:''),location:e.location||''});
+var q2=new URLSearchParams({action:'TEMPLATE',text:fmtTitle(e),dates:toUtc(e.start)+'/'+toUtc(e.end),details:(e.description||'')+(e.url?'\n'+e.url:''),location:e.location||''});
 var imgSrc=e.img||ph(e);
 var imgHtml='<img loading="lazy" src="'+esc(imgSrc)+'" alt="">';
 var lk0=getLiked().indexOf(e.id)>=0;var likeBtn='<button class="like'+(lk0?' on':'')+'" onclick="toggleLike(\''+e.id+'\')" title="有興趣">'+(lk0?'\u2764\ufe0f':'\u2661')+'</button>';var img='<div class="thumb">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+imgHtml+'</a>':imgHtml)+'<div style="text-align:right;">'+likeBtn+'</div></div>';
