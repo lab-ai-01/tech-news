@@ -8,7 +8,8 @@
   "url": "https://www.accupass.com/event/2609090756142114586819",
   "id": "4d270eb54156",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://static.accupass.com/eventbanner/2609090746461811371326.jpg"
  },
  {
   "title": "空間運算新時代：知識視覺化與AI代理人（台大）",
@@ -19,7 +20,8 @@
   "url": "https://www.dlc.ntu.edu.tw/",
   "id": "3e7e9a3e0829",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": null
  },
  {
   "title": "中研院開放日：多模態語言模型",
@@ -30,7 +32,8 @@
   "url": "https://openhouse.sinica.edu.tw/events/463",
   "id": "22069c561375",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://d2x1gov9yn7zyc.cloudfront.net/openhouse2026/uploads/website/2/event/image/463/2026OpenHouse_%E6%B4%BB%E5%8B%95%E4%BB%A3%E8%A1%A8%E5%9C%96-1.jpg"
  },
  {
   "title": "中研院開放日：AI真假辨識",
@@ -41,7 +44,8 @@
   "url": "https://openhouse.sinica.edu.tw/events/500",
   "id": "870fe39b3d9e",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://d2x1gov9yn7zyc.cloudfront.net/openhouse2026/uploads/website/2/event/image/500/2026OpenHouse_%E6%B4%BB%E5%8B%95%E4%BB%A3%E8%A1%A8%E5%9C%96-2.jpg"
  },
  {
   "title": "IMPACT-IAAC 2026（先進封裝）",
@@ -52,7 +56,8 @@
   "url": "https://www.impact.org.tw/",
   "id": "a909b9e08d01",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": null
  },
  {
   "title": "2026科技論壇：AI Agent新賽局",
@@ -63,7 +68,8 @@
   "url": "https://money.udn.com/ACT/2026/tech/index.html",
   "id": "bd2b8439d611",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://money.udn.com/ACT/2026/tech/images/share_card.jpg"
  },
  {
   "title": "IEEE線上講座：Phototransistor Memory",
@@ -74,7 +80,8 @@
   "url": "https://events.vtools.ieee.org/m/566556",
   "id": "2863cedd17e3",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://events.vtools.ieee.org/assets/IEEE_logo_share-1865d4ee759f4354f16d5156e4313bba31c1f869d7b24dd23f11c41f3c5b1536.jpg"
  },
  {
   "title": "成大量子資訊演講",
@@ -85,7 +92,8 @@
   "url": "http://140.116.249.184/events/318",
   "id": "354ec1d59f33",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "http://140.116.249.184/uploads/event_content/photo/318/qfort_bg__1_.jpg"
  },
  {
   "title": "Microsoft DevDays Asia 2026",
@@ -96,7 +104,8 @@
   "url": "https://learn.microsoft.com/",
   "id": "785b19c6d0a3",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://learn.microsoft.com/en-us/media/open-graph-image.png"
  },
  {
   "title": "ACM RecSys 2026（美國）",
@@ -107,7 +116,8 @@
   "url": "https://recsys.acm.org/recsys26/",
   "id": "0446cdba52a0",
   "free": false,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": "https://recsys.acm.org/wp-content/uploads/2020/07/Recsys-OG.png"
  },
  {
   "title": "2026資安社群嘉年華",
@@ -118,7 +128,8 @@
   "url": "https://ievents.iii.org.tw/EventS.aspx?t=0&id=3514",
   "id": "7fd1c048af10",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": null
  },
  {
   "title": "弱點掃描與漏洞修補",
@@ -129,6 +140,7 @@
   "url": "https://ievents.iii.org.tw/EventS.aspx?t=0&id=3458",
   "id": "cc99b9e6da13",
   "free": true,
-  "added": "2026-09-20"
+  "added": "2026-09-20",
+  "img": null
  }
 ]
