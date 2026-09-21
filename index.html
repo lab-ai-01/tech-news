@@ -1,52 +1,60 @@
 <!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>[AI-Lab] 近期 keynote・演講・研討會（EE／CS）</title>
-<style>body{font-family:-apple-system,"Microsoft JhengHei","PingFang TC",sans-serif;background:#f4f6f8;margin:0;padding:16px;color:#222}.wrap{max-width:720px;margin:0 auto}.bar{background:#fff;border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}.bar input,.bar select{font-size:14px;padding:8px;margin:4px 4px 4px 0;border:1px solid #ccc;border-radius:8px}.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:10px;border-left:5px solid #1a73e8;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;gap:12px}.txt{flex:1;min-width:0}.thumb{width:120px;flex:none;align-self:flex-start;border-radius:8px;overflow:hidden}.thumb img{width:120px;height:90px;object-fit:cover;display:block}.meta{font-size:12px;color:#1a73e8;font-weight:bold}.t{font-size:16px;font-weight:bold;margin:4px 0}.d{font-size:13px;color:#444}.tag{font-size:11px;font-weight:bold;padding:2px 8px;border-radius:10px;margin-left:6px}.free{background:#e6f4ea;color:#137333}.paid{background:#fef7e0;color:#b06000}.loc{background:#e8f0fe;color:#1a73e8}.btn{display:inline-block;background:#1a73e8;color:#fff;text-decoration:none;font-size:13px;padding:7px 14px;border-radius:8px;margin-top:8px}.src{color:#1a73e8;font-size:13px;margin-left:10px;text-decoration:none}#count{font-size:13px;color:#666;padding:4px}.card.done{background:#f0f8f0;border-left-color:#34a853}.card.expired{background:#f1f3f4;border-left-color:#9aa0a6;color:#5f6368}.badge-done{font-size:11px;font-weight:bold;color:#137333;background:#ceead6;padding:2px 8px;border-radius:10px;margin-left:6px}.sec{font-size:14px;font-weight:bold;color:#5f6368;padding:10px 4px 6px}.card.expired .btn{display:none}.like{font-size:17px;background:none;border:2px solid #dadce0;border-radius:10px;padding:10px 14px;margin-top:8px;cursor:pointer;float:right;min-width:44px;min-height:44px;}.like.on{border-color:#ea4335;}</style></head>
+<style>body{font-family:-apple-system,"Microsoft JhengHei","PingFang TC",sans-serif;background:#f4f6f8;margin:0;padding:16px;color:#222}.wrap{max-width:720px;margin:0 auto}.bar{background:#fff;border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}.bar input,.bar select{font-size:14px;padding:8px;margin:4px 4px 4px 0;border:1px solid #ccc;border-radius:8px}.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:10px;border-left:5px solid #1a73e8;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;gap:12px}.txt{flex:1;min-width:0}.thumb{width:120px;flex:none;align-self:flex-start;border-radius:8px;overflow:hidden}.thumb img{width:120px;height:90px;object-fit:cover;display:block}.meta{font-size:12px;color:#1a73e8;font-weight:bold}.t{font-size:16px;font-weight:bold;margin:4px 0}.d{font-size:13px;color:#444}.tag{font-size:11px;font-weight:bold;padding:2px 8px;border-radius:10px;margin-left:6px}.free{background:#e6f4ea;color:#137333}.paid{background:#fef7e0;color:#b06000}.loc{background:#e8f0fe;color:#1a73e8}.btn{display:inline-block;background:#1a73e8;color:#fff;text-decoration:none;font-size:13px;padding:7px 14px;border-radius:8px;margin-top:8px}.like{font-size:15px;background:none;border:1px solid #dadce0;border-radius:8px;padding:5px 10px;margin-top:8px;margin-left:8px;cursor:pointer;vertical-align:middle}.like.on{border-color:#ea4335}.src{color:#1a73e8;font-size:13px;margin-left:10px;text-decoration:none}#count{font-size:13px;color:#666;padding:4px}.card.done{background:#f0f8f0;border-left-color:#34a853}.card.expired{background:#f1f3f4;border-left-color:#9aa0a6;color:#5f6368}.badge-done{font-size:11px;font-weight:bold;color:#137333;background:#ceead6;padding:2px 8px;border-radius:10px;margin-left:6px}.sec{font-size:14px;font-weight:bold;color:#5f6368;padding:10px 4px 6px}.card.expired .btn{display:none}</style></head>
 <body><div class="wrap">
 <h2 style="margin:4px 0 12px;">[AI-Lab] 近期 keynote・演講・研討會（EE／CS）</h2>
 <div id="fresh" style="font-size:12px;color:#888;margin:0 0 12px;"></div>
-<div class="bar"><input id="q" placeholder="關鍵字搜尋…" size="16"><select id="loc"><option value="">全部地點</option><option>台北</option><option>台南</option><option>線上</option><option>海外</option></select><select id="fee"><option value="">免費＋付費</option><option value="free">只看免費</option><option value="paid">只看付費</option></select><select id="sort"><option value="date">日期排序</option><option value="new">最新加入</option></select><select id="liked"><option value="">全部</option><option value="1">只看愛心 ♥</option></select></div>
+<div class="bar"><input id="q" placeholder="\u95dc\u9375\u5b57\u641c\u5c0b\u2026" size="16"><select id="loc"></select><select id="fee"><option value="">\u514d\u8cbb\uff0b\u4ed8\u8cbb</option><option value="free">\u53ea\u770b\u514d\u8cbb</option><option value="paid">\u53ea\u770b\u4ed8\u8cbb</option></select><select id="sort"><option value="date">\u65e5\u671f\u6392\u5e8f</option><option value="new">\u6700\u65b0\u52a0\u5165</option></select><select id="liked"><option value="">\u5168\u90e8</option><option value="1">\u53ea\u770b\u611b\u5fc3 \u2665</option></select><select id="catsel" style="display:none;"></select></div>
 <div id="count"></div><div id="list"></div>
 <script>
 let EV=[];
+const PAGE_CONF={"locmode":"default","locopts":["","台北","台南","線上","海外"],"cats":null};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function siteId(){try{return (location.pathname||"/").split("/").filter(Boolean)[0]||"main";}catch(e){return "main";}}
-/*SITEKEY_V1*/
 function ph(e){const t=(e.title||"").slice(0,18),d=(e.start||"").slice(0,10);const s='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="90"><rect width="120" height="90" fill="#1a3a6b"/><text x="8" y="36" font-size="11" font-weight="bold" fill="#ffffff" font-family="sans-serif">'+t.replace(/&/g,"&amp;").replace(/</g,"&lt;")+'</text><text x="8" y="58" font-size="10" fill="#9ec1ff" font-family="sans-serif">'+d+'</text><text x="8" y="76" font-size="9" fill="#6b8fc7" font-family="sans-serif">AI-Lab</text></svg>';return "data:image/svg+xml;utf8,"+encodeURIComponent(s);}
-function locCat(l){l=l||"";if(/線上|Virtual|virtual/i.test(l))return"線上";if(/台南|成大|南大|沙崙/i.test(l))return"台南";if(/台北|新北|桃園|新竹|台中|高雄|USA|美國|Minneapolis/i.test(l))return(/USA|美國|Minneapolis/i.test(l)?"海外":"台北");return"其他";}
+function locCat(l){l=l||"";if(/\u7dda\u4e0a|Virtual|virtual/i.test(l))return"\u7dda\u4e0a";if(/\u53f0\u5357|\u6210\u5927|\u5357\u5927|\u6c99\u5d19/i.test(l))return"\u53f0\u5357";if(/\u53f0\u5317|\u65b0\u5317|\u6843\u5712|\u65b0\u7af9|\u53f0\u4e2d|\u9ad8\u96c4|USA|\u7f8e\u570b|Minneapolis/i.test(l))return(/USA|\u7f8e\u570b|Minneapolis/i.test(l)?"\u6d77\u5916":"\u53f0\u5317");return"\u5176\u4ed6";}
+function confLocCat(l){l=l||"";if(PAGE_CONF.locmode==="cheap"){if(/\u7dda\u4e0a|Virtual|virtual|\u96fb\u5546|\u5b98\u7db2|APP|\u7dda\u4e0a\u5546\u57ce/i.test(l))return"\u7dda\u4e0a";if(/\u53f0\u5357|\u6210\u5927|\u5357\u5927|\u6c99\u5d19/i.test(l))return"\u9650\u53f0\u5357";return"\u4e0d\u9650\u5730\u5340";}return locCat(l);}
+function catOf(e){if(!PAGE_CONF.cats)return "";const hay=(e.title+" "+e.description+" "+e.location);for(const k of Object.keys(PAGE_CONF.cats)){try{if(new RegExp(PAGE_CONF.cats[k].join("|"),"i").test(hay))return k;}catch(_){}}return "";}
 function toUtc(iso){const d=new Date(iso);const p=n=>String(n).padStart(2,"0");return d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+"T"+p(d.getUTCHours())+p(d.getUTCMinutes())+"00Z";}
-function todayStr(){const d=new Date();const p=n=>String(n).padStart(2,"0");return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
-function isExpired(e){return (e.end||e.start||'').slice(0,10)<todayStr();}
-function getAdded(){try{return JSON.parse(localStorage.getItem('ailab_added_'+siteId())||'[]');}catch(e){return [];}}
-function markAdded(id){try{const a=getAdded();if(a.indexOf(id)<0){a.push(id);localStorage.setItem('ailab_added_'+siteId(),JSON.stringify(a));}render();}catch(e){}}
-function getLiked(){try{return JSON.parse(localStorage.getItem('ailab_liked_'+siteId())||'[]');}catch(e){return [];}}
-function toggleLike(id){try{let a=getLiked();const i=a.indexOf(id);if(i<0){a.push(id);}else{a.splice(i,1);}localStorage.setItem('ailab_liked_'+siteId(),JSON.stringify(a));render();}catch(e){}}
-function fmtTitle(e){try{const d=new Date(e.start);const wd='\u65e5\u4e00\u4e8c\u4e09\u56db\u4e94\u516d'[d.getDay()];const p=n=>String(n).padStart(2,'0');const loc=String(e.location||'').split(/[\uff0c,\u3001(\uff08]/)[0].slice(0,15);return (d.getMonth()+1)+'/'+d.getDate()+'('+wd+') '+d.getHours()+':'+p(d.getMinutes())+' '+e.title+'@'+loc;}catch(_){return e.title;}}
+function fmtTitle(e){try{const d=new Date(e.start);const wd="\u65e5\u4e00\u4e8c\u4e09\u56db\u4e94\u516d"[d.getDay()];const p=n=>String(n).padStart(2,"0");const loc=String(e.location||"").split(/[\uff0c,\u3001(\uff08]/)[0].slice(0,15);return (d.getMonth()+1)+"/"+d.getDate()+"("+wd+") "+d.getHours()+":"+p(d.getMinutes())+" "+e.title+"@"+loc;}catch(_){return e.title;}}
+function todayStr(){const d=new Date();const p=n=>String(n).padStart(2,"0");return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate());}
+function isExpired(e){return (e.end||e.start||"").slice(0,10)<todayStr();}
+function getAdded(){try{return JSON.parse(localStorage.getItem("ailab_added_"+siteId())||"[]");}catch(e){return [];}}
+function markAdded(id){try{const a=getAdded();if(a.indexOf(id)<0){a.push(id);localStorage.setItem("ailab_added_"+siteId(),JSON.stringify(a));}render();}catch(e){}}
+function getLiked(){try{return JSON.parse(localStorage.getItem("ailab_liked_"+siteId())||"[]");}catch(e){return [];}}
+function toggleLike(id){try{let a=getLiked();const i=a.indexOf(id);if(i<0){a.push(id);}else{a.splice(i,1);}localStorage.setItem("ailab_liked_"+siteId(),JSON.stringify(a));render();}catch(e){}}
+function fillBar(){try{const lo=document.getElementById("loc");lo.innerHTML=PAGE_CONF.locopts.map(o=>"<option value=\""+o+"\">"+(o||"\u5168\u90e8\u5730\u9ede")+"</option>").join("");const cs=document.getElementById("catsel");if(cs){if(PAGE_CONF.cats){cs.style.display="";cs.innerHTML="<option value=\"\">\u5168\u90e8\u5206\u985e</option>"+Object.keys(PAGE_CONF.cats).map(k=>"<option value=\""+k+"\">"+k+"</option>").join("");}else{cs.style.display="none";}}}catch(_){}}
 function cardHtml(e){
-var dt=e.start.slice(0,16).split('T').join(' ');
-if(e.start.slice(0,10)!==e.end.slice(0,10)){dt+=' → '+e.end.slice(5,16).split('T').join(' ');}
-var q2=new URLSearchParams({action:'TEMPLATE',text:fmtTitle(e),dates:toUtc(e.start)+'/'+toUtc(e.end),details:(e.description||'')+(e.url?'\n'+e.url:''),location:e.location||''});
+var dt=e.start.slice(0,16).split("T").join(" ");
+if(e.start.slice(0,10)!==e.end.slice(0,10)){dt+=" \u2192 "+e.end.slice(5,16).split("T").join(" ");}
+var q2=new URLSearchParams({action:"TEMPLATE",text:fmtTitle(e),dates:toUtc(e.start)+"/"+toUtc(e.end),details:(e.description||"")+(e.url?"\n"+e.url:""),location:e.location||""});
 var imgSrc=e.img||ph(e);
 var imgHtml='<img loading="lazy" src="'+esc(imgSrc)+'" alt="">';
-var lk0=getLiked().indexOf(e.id)>=0;var likeBtn='<button class="like'+(lk0?' on':'')+'" onclick="toggleLike(\''+e.id+'\')" title="有興趣">'+(lk0?'\u2764\ufe0f':'\u2661')+'</button>';var img='<div class="thumb">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+imgHtml+'</a>':imgHtml)+'<div style="text-align:right;">'+likeBtn+'</div></div>';
+var lk0=getLiked().indexOf(e.id)>=0;
+var likeBtn='<button class="like'+(lk0?" on":"")+'" onclick="toggleLike(\''+e.id+'\')" title="\u6709\u8208\u8da3">'+(lk0?"\u2764\ufe0f":"\u2661")+'</button>';
+var img='<div class="thumb">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+imgHtml+'</a>':imgHtml)+'<div style="text-align:right;">'+likeBtn+'</div></div>';
 var exp=isExpired(e);var done=getAdded().indexOf(e.id)>=0;
-var h='<div class="card'+(exp?' expired':'')+(done&&!exp?' done':'')+'"><div class="txt"><div class="meta">'+dt+'｜'+esc(e.location||'');
-h+='<span class="tag '+(e.free?'free':'paid')+'">'+(e.free?'免費':'付費')+'</span><span class="tag loc">'+locCat(e.location)+'</span>';
-if(done&&!exp){h+='<span class="badge-done">已加入✓</span>';}
-if(exp){h+='<span class="tag loc">已結束</span>';}
-h+='</div><div class="t">'+(e.url?'<a style="color:inherit;text-decoration:none;" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+'</a>':esc(e.title))+'</div>';
-h+='<div class="d">'+esc(e.description||'')+'</div>';
-if(!exp){h+='<a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?'+q2.toString()+'" onclick="markAdded(\''+e.id+'\')">加入行事曆</a>';}
-if(e.url){h+='<a class="src" href="'+esc(e.url)+'">來源</a>';}var lk=lk0;/*CARD_LIKE_V1*/
+var h='<div class="card'+(exp?" expired":"")+(done&&!exp?" done":"")+'"><div class="txt"><div class="meta">'+dt+'\uff5c'+esc(e.location||"");
+h+='<span class="tag '+(e.free?"free":"paid")+'">'+(e.free?"\u514d\u8cbb":"\u4ed8\u8cbb")+'</span><span class="tag loc">'+confLocCat(e.location)+'</span>';
+(()=>{const cb=catOf(e);if(cb)h+='<span class="tag loc">'+esc(cb)+'</span>';})();
+if(done&&!exp){h+='<span class="badge-done">\u5df2\u52a0\u5165\u2713</span>';}
+if(exp){h+='<span class="tag loc">\u5df2\u7d50\u675f</span>';}
+h+='</div><div class="t">'+(e.url?'<a style="color:inherit;text-decoration:none;" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+'</a>':esc(e.title))+'</div><div class="d">'+esc(e.description||"")+'</div>';
+if(!exp){h+='<a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?'+q2.toString()+'" onclick="markAdded(\''+e.id+'\')">\u52a0\u5165\u884c\u4e8b\u66c6</a>';}
+if(e.url){h+='<a class="src" href="'+esc(e.url)+'">\u4f86\u6e90</a>';}
 h+='</div>'+img+'</div>';return h;}
 function render(){
-const q=document.getElementById("q").value.trim(),loc=document.getElementById("loc").value,fee=document.getElementById("fee").value,sort=document.getElementById("sort").value,Olk=document.getElementById("liked").value;
-let r=EV.filter(e=>{if(q&&((e.title+e.description+e.location).indexOf(q)<0))return false;if(loc&&locCat(e.location)!==loc)return false;if(fee==="free"&&!e.free)return false;if(fee==="paid"&&e.free)return false;if(Olk==="1"&&getLiked().indexOf(e.id)<0)return false;return true;});
+const q=document.getElementById("q").value.trim(),loc=document.getElementById("loc").value,fee=document.getElementById("fee").value,sort=document.getElementById("sort").value,Olk=document.getElementById("liked").value,catf=(document.getElementById("catsel")?document.getElementById("catsel").value:"");
+let r=EV.filter(e=>{if(q&&((e.title+e.description+e.location).indexOf(q)<0))return false;if(loc&&confLocCat(e.location)!==loc)return false;if(fee==="free"&&!e.free)return false;if(fee==="paid"&&e.free)return false;if(catf&&catOf(e)!==catf)return false;if(Olk==="1"&&getLiked().indexOf(e.id)<0)return false;return true;});
 r.sort((a,b)=>sort==="date"?a.start.localeCompare(b.start):b.added.localeCompare(a.added));
-document.getElementById("count").textContent="共 "+r.length+" 場（總庫 "+EV.length+" 場）";try{var mx="";for(const e of EV){if(e.added&&e.added>mx)mx=e.added;}document.getElementById("fresh").textContent="資料更新："+(mx||"—")+"｜共 "+EV.length+" 場";}catch(_){}
+document.getElementById("count").textContent="\u5171 "+r.length+" \u5834\uff08\u7e3d\u5eab "+EV.length+" \u5834\uff09";
+try{var mx="";for(const e of EV){if(e.added&&e.added>mx)mx=e.added;}document.getElementById("fresh").textContent="\u8cc7\u6599\u66f4\u65b0\uff1a"+(mx||"—")+"\uff5c\u5171 "+EV.length+" \u5834";}catch(_){}
 var act=r.filter(function(e){return !isExpired(e);});var old=r.filter(function(e){return isExpired(e);});
-var h=act.map(cardHtml).join('')||"<p>沒有符合的場次。</p>";
-if(old.length){h+='<div class="sec">已結束（'+old.length+'場）</div>'+old.map(cardHtml).join('');}
+var h=act.map(cardHtml).join("")||"<p>\u6c92\u6709\u7b26\u5408\u7684\u5834\u6b21\u3002</p>";
+if(old.length){h+='<div class="sec">\u5df2\u7d50\u675f\uff08'+old.length+'\u5834\uff09</div>'+old.map(cardHtml).join("");}
 document.getElementById("list").innerHTML=h;}
-["q","loc","fee","sort","liked"].forEach(id=>document.getElementById(id).addEventListener("input",render));
-function loadEv(n){fetch("events.json").then(r=>{if(!r.ok)throw 0;return r.json();}).then(j=>{EV=j;render();}).catch(()=>{if(n<4){document.getElementById("list").innerHTML="<p>總庫更新中，5 秒後重試…</p>";setTimeout(()=>loadEv(n+1),5000);}else{document.getElementById("list").innerHTML="<p>總庫載入失敗，請稍後再試。</p>";}});}
+["q","loc","fee","sort","liked","catsel"].forEach(id=>{try{document.getElementById(id).addEventListener("input",render);}catch(_){}});
+try{fillBar();}catch(_){}
+function loadEv(n){fetch("events.json").then(r=>{if(!r.ok)throw 0;return r.json();}).then(j=>{EV=j;render();}).catch(()=>{if(n<4){document.getElementById("list").innerHTML="<p>\u7e3d\u5eab\u66f4\u65b0\u4e2d\uff0c5 \u79d2\u5f8c\u91cd\u8a66\u2026</p>";setTimeout(()=>loadEv(n+1),5000);}else{document.getElementById("list").innerHTML="<p>\u7e3d\u5eab\u8f09\u5165\u5931\u6557\uff0c\u8acb\u7a0d\u5f8c\u518d\u8a66\u3002</p>";}});}
 loadEv(0);
+try{if(typeof window!=="undefined"&&window.addEventListener){window.addEventListener("pageshow",function(){loadEv(0);});}if(typeof document!=="undefined"&&document.addEventListener){document.addEventListener("visibilitychange",function(){if(!document.hidden)loadEv(0);});}}catch(_){}
 </script></div></body></html>
