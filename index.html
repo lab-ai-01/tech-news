@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>[AI-Lab] 近期 keynote・演講・研討會（EE／CS）</title>
+<!DOCTYPE html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>[AI-Lab] 近期 keynote・演講・研討會（EE／CS）</title>
 <meta name="description" content="資訊電機研討會情報：研討會、演講、keynote，每週更新">
 <meta property="og:type" content="website">
 <meta property="og:title" content="[AI-Lab] 近期 keynote・演講・研討會（EE／CS）">
@@ -13,6 +13,8 @@
 <div id="count"></div><div id="list"></div>
 <script>
 let EV=[];
+let MAXADDED="";
+function isNewEv(e){try{if(!e||!e.added||!MAXADDED)return false;const a=new Date(e.added+"T00:00:00+08:00").getTime(),m=new Date(MAXADDED+"T00:00:00+08:00").getTime();if(isNaN(a)||isNaN(m))return false;return (m-a)/86400000<=7;}catch(_){return false;}}
 const PAGE_CONF={"locmode":"default","locopts":["","台北","台南","線上","海外"],"cats":null};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function siteId(){try{return (location.pathname||"/").split("/").filter(Boolean)[0]||"main";}catch(e){return "main";}}
@@ -45,6 +47,7 @@ var exp=isExpired(e);var done=getAdded().indexOf(e.id)>=0;
 var h='<div class="card'+(exp?" expired":"")+(done&&!exp?" done":"")+'"><div class="txt"><div class="meta">'+dt+'\uff5c'+esc(e.location||"");
 h+='<span class="tag '+(e.free?"free":"paid")+'">'+(e.free?"\u514d\u8cbb":"\u4ed8\u8cbb")+'</span><span class="tag loc">'+confLocCat(e.location)+'</span>'+dlBadge(e);
 (()=>{const cb=catOf(e);if(cb)h+='<span class="tag loc">'+esc(cb)+'</span>';})();
+if(isNewEv(e)){h+='<span class="badge-new">NEW</span>';}
 if(done&&!exp){h+='<span class="badge-done">\u5df2\u52a0\u5165\u2713</span>';}
 if(exp){h+='<span class="tag loc">\u5df2\u7d50\u675f</span>';}
 h+='</div><div class="t">'+(e.url?'<a style="color:inherit;text-decoration:none;" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title)+'</a>':esc(e.title))+'</div><div class="d">'+esc(e.description||"")+'</div>';
@@ -57,6 +60,8 @@ let r=EV.filter(e=>{e=e||{};if(q&&(((e.title||"")+(e.description||"")+(e.locatio
 r.sort((a,b)=>String(a.start||"").localeCompare(String(b.start||"")));
 if(sort==="new")r.sort((a,b)=>String(b.added||"").localeCompare(String(a.added||"")));
 document.getElementById("count").textContent="\u5171 "+r.length+" \u5834\uff08\u7e3d\u5eab "+EV.length+" \u5834\uff09";
+try{var mx="";for(const e of EV){const a=(e&&e.added)||"";if(a&&a>mx)mx=a;}document.getElementById("fresh").textContent="\u8cc7\u6599\u66f4\u65b0\uff1a"+(mx||"—")+"\uff5c\u5171 "+EV.length+" \u5834";}catch(_){}
+MAXADDED=(()=>{try{let m="";for(const e of EV){const a=(e&&e.added)||"";if(a&&a>m)m=a;}return m;}catch(_){return "";}})();
 try{var mx="";for(const e of EV){const a=(e&&e.added)||"";if(a&&a>mx)mx=a;}document.getElementById("fresh").textContent="\u8cc7\u6599\u66f4\u65b0\uff1a"+(mx||"—")+"\uff5c\u5171 "+EV.length+" \u5834";}catch(_){}
 var act=r.filter(function(e){return !isExpired(e);});var old=r.filter(function(e){return isExpired(e);});
 var h=act.map(cardHtml).join("")||"<p>\u6c92\u6709\u7b26\u5408\u7684\u5834\u6b21\u3002</p>";
