@@ -142,5 +142,89 @@
   "free": true,
   "added": "2026-09-20",
   "img": null
+ },
+ {
+  "title": "【中研院卓越演講】Facing Disease Complexity Through Big Data: Where AI Will Take Us Next",
+  "start": "2026-10-06T10:00:00+08:00",
+  "end": "2026-10-06T12:00:00+08:00",
+  "location": "中央研究院 資訊科學研究所新館106演講廳（台北市南港區研究院路二段128號）",
+  "description": "講者：Satoru Miyano 教授（Institute of Science Tokyo / ISCB Fellow）｜費用：免費（學術演講）",
+  "url": "https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ260039.html",
+  "id": "d8b8252f7ee8",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【中研院學術演講】RANDOMNESS REUSE IN LLM WATERMARKS: SECURITY BOUNDS AND BLACK-BOX",
+  "start": "2026-10-07T10:15:00+08:00",
+  "end": "2026-10-07T12:15:00+08:00",
+  "location": "中央研究院 資訊科學研究所新館101演講廳（台北市南港區研究院路二段128號）",
+  "description": "講者：Yu Long Chen 博士（比利時魯汶大學電腦安全與工業密碼學小組）｜費用：免費（學術演講）",
+  "url": "https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ260048.html",
+  "id": "f71e330f36ee",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【臺大資工學術演講】Applications of Zero-Knowledge Proofs in Finance and Supply Chains",
+  "start": "2026-10-08T13:00:00+08:00",
+  "end": "2026-10-08T14:00:00+08:00",
+  "location": "國立臺灣大學 資訊工程德田館 R606教室（台北市大安區羅斯福路四段1號）",
+  "description": "講者：盧瑞山副教授（德明財經科技大學）｜費用：免費（學術演講）",
+  "url": "https://www.csie.ntu.edu.tw/zh_tw/Announcements/AllAnnouncement/-2026-10-08-Prof-Ruei-Shan-Lu-Takming-University-of-Science-and-Technology-Applications-of-Zero-Knowledge-Proofs-in-Finance-and-Supply-Chains-94157064",
+  "id": "05080d2130dc",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【中研院卓越演講】Exploring the Representation Space of LLMs",
+  "start": "2026-10-13T10:10:00+08:00",
+  "end": "2026-10-13T12:00:00+08:00",
+  "location": "中央研究院 資訊科學研究所新館106演講廳（台北市南港區研究院路二段128號）",
+  "description": "講者：Eduard Hovy 教授（University of Melbourne / ACL & AAAI Fellow）｜費用：免費（學術演講）",
+  "url": "https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ260036.html",
+  "id": "5e9223cf2134",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【中研院卓越演講】Towards AI Superhuman Reasoning: from neuro-symbolic to thinking models and agents",
+  "start": "2026-10-13T15:00:00+08:00",
+  "end": "2026-10-13T17:00:00+08:00",
+  "location": "中央研究院 資訊科學研究所新館106演講廳（台北市南港區研究院路二段128號）",
+  "description": "講者：Thang Luong 博士（Google DeepMind Principal Scientist & Director of Research）｜費用：免費（自由入場／學術演講）",
+  "url": "https://www.iis.sinica.edu.tw/zh/page/Events/data/DJ260047.html",
+  "id": "a2426a4cce90",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【成大資工學術演講】雲端平台工程的實踐——探究雲端平台工程的廣與深",
+  "start": "2026-10-16T14:30:00+08:00",
+  "end": "2026-10-16T16:00:00+08:00",
+  "location": "國立成功大學 資訊系館 A1302 教室（台南市東區大學路1號）",
+  "description": "講者：許耀宗（群暉科技雲端部門 資深開發研究員）｜費用：免費（系所專題演講）",
+  "url": "https://www.csie.ncku.edu.tw/zh-hant/news/13562",
+  "id": "ca2df4d3eca1",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
+ },
+ {
+  "title": "【臺大資工專題討論】在矽谷科技業當工程師是什麼樣子：真實的路徑、日常、與代價",
+  "start": "2026-10-16T14:20:00+08:00",
+  "end": "2026-10-16T15:30:00+08:00",
+  "location": "國立臺灣大學 資訊工程德田館 R103演講廳（台北市大安區羅斯福路四段1號）",
+  "description": "講者：Ms. Kelly Tsai（矽谷科技公司軟體工程師 / 科技創作者）｜費用：免費（專題討論演講）",
+  "url": "https://www.csie.ntu.edu.tw/zh_tw/Announcements/AllAnnouncement/%5B2026-10-16%5D-Ms-Kelly-Tsai-%E5%9C%A8%E7%9F%BD%E8%B0%B7%E7%A7%91%E6%8A%80%E6%A5%AD%E7%95%B6%E5%B7%A5%E7%A8%8B%E5%B8%AB%E6%98%AF%E4%BB%80%E9%BA%BC%E6%A8%A3%E5%AD%90-%E7%9C%9F%E5%AF%A6%E7%9A%84%E8%B7%AF%E5%BE%91-%E6%97%A5%E5%B8%B8-%E8%88%87%E4%BB%A3%E5%83%B9-%0D%0A-50853502",
+  "id": "9c7fda8ab7f7",
+  "free": true,
+  "added": "2026-10-05",
+  "img": null
  }
 ]
